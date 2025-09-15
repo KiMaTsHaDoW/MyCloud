@@ -1,0 +1,18 @@
+header{
+    position: relative;
+    text-align: center;
+    background-image: url("https://picsum.photos/id/1040/600/400");
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    color: antiquewhite;
+}
+
+footer{
+    background-color: rgb(118, 202, 94);
+}
+
+.formulario{
+    align-items: center;
+    text-align: center;
+}
