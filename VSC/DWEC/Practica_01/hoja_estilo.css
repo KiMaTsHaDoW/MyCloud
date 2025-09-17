@@ -10,9 +10,21 @@ header{
 
 footer{
     background-color: rgb(118, 202, 94);
+    text-align: center;
 }
 
 .formulario{
-    align-items: center;
+    display: block;
+    margin: auto;
+
+}
+
+.tabla{
+    border: red;
+    border-radius: 20;
+}
+
+.navegador{
+    background-color: goldenrod;
     text-align: center;
 }
