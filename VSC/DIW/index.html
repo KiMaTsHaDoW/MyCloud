@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <p>Nombre:<input type="text" maxlength="10" required></p>
+                <p>Apellidos:<input type="text" maxlength="20" required></p>
+                <p>Correo Electronico:<input type="email" required></p>
+                <p>Telefono:<input type="text" minlength="9" maxlength="9" pattern="\d*9" required></p>
+                <p>Fecha de nacimiento:<input type="date" required></p>
+                <p>Edad:<input type="text" maxlength="3" pattern="\d*3" required></p>
+                <p>Color favorito:<input type="color" required></p>
+                <p>
+                    Nacionalidad:<input type="text">
+                    <datalist >
+                        <option>Española</option>
+                        <option>Italiana</option>
+                        <option>Alemana</option>
+                        <option>Belga</option>
+                    </datalist>
+                </p>
+            </fieldset>    
+            <input type="submit">
+        </form>
+    </body>
+
+</html>
