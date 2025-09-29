@@ -72,47 +72,76 @@
         //     }
         //     numero++
         // } while (numero < fin);
+
+        // FORMA FOR
+
+        // for (n = 100; n >= 1; n--){
+        //     if (n % 2 !== 0 && n % 3 !== 0 && n % 7 !== 0){
+        //         console.log(n);
+        //     }
+        // }
+
     </script>
 
     <script>
-        let area = 0;
-        let opcion = 0;
-        document.writeln(`
-        <ol>
-            <li>Area del triangulo (b*h/2)</li>
-            <li>Area del rectangulo (b*h)</li>
-            <li>Area del circulo (Pi*r^2)</li>
-            <li>Salir</li>
-        </ol>
-        `);
-        while (opcion != 4){
-            opcion = parseInt(prompt("Selecciona una opcion 1. Area triangulo 2. Area rectangulo 3. Area ciruclo 4. Salir"));
-            if (opcion == 1){
-                let altura = parseInt(prompt("Introduce la altura del triangulo (Numero Entero)"))
-                let base = parseInt(prompt("Introduce la base del triangulo (Numero Entero)"))
-                area = (altura * base) / 2
+        // let area = 0;
+        // let opcion = 0;
+        // document.writeln(`
+        // <ol>
+        //     <li>Area del triangulo (b*h/2)</li>
+        //     <li>Area del rectangulo (b*h)</li>
+        //     <li>Area del circulo (Pi*r^2)</li>
+        //     <li>Salir</li>
+        // </ol>
+        // `);
+        // while (opcion != 4){
+        //     opcion = parseInt(prompt("Selecciona una opcion 1. Area triangulo 2. Area rectangulo 3. Area ciruclo 4. Salir"));
+        //     if (opcion == 1){
+        //         let altura = parseInt(prompt("Introduce la altura del triangulo (Numero Entero)"))
+        //         let base = parseInt(prompt("Introduce la base del triangulo (Numero Entero)"))
+        //         area = (altura * base) / 2
 
-            }
-            else if (opcion == 2){
-                let altura = parseInt(prompt("Introduce la altura del rectangulo (Numero Entero)"))
-                let base = parseInt(prompt("Introduce la base del rectangulo (Numero Entero)"))
-                area = altura * base
-            }
-            else if (opcion == 3){
-                let radio = parseInt(prompt("Introduce la altura del triangulo (Numero Entero)"))
-                area = (Math.PI * radio**2)
-            }
-            else if (opcion == 4){
-                alert("Adios")
-            }
-            else{
-                alert("Elige algo valido, inepto")
-            }
-            console.log("El area de la figura seleccionada es " + area)
-        }
+        //     }
+        //     else if (opcion == 2){
+        //         let altura = parseInt(prompt("Introduce la altura del rectangulo (Numero Entero)"))
+        //         let base = parseInt(prompt("Introduce la base del rectangulo (Numero Entero)"))
+        //         area = altura * base
+        //     }
+        //     else if (opcion == 3){
+        //         let radio = parseInt(prompt("Introduce la altura del triangulo (Numero Entero)"))
+        //         area = (Math.PI * radio**2)
+        //     }
+        //     else if (opcion == 4){
+        //         alert("Adios")
+        //     }
+        //     else{
+        //         alert("Elige algo valido, inepto")
+        //     }
+        //     console.log("El area de la figura seleccionada es " + area)
+        // }
 
     </script>
 
+    <script>
+        let num1 = àrseint(prompt('Introduce el primer numero'));
+        let num2 = àrseint(prompt('Introduce el segundo numero'));
+        resultado = 0;
+
+        if (num1 > num2){
+            let temp = num1;
+            num1 = num2;
+            num1 = temp;
+        }
+
+        while (num1 <= num2){
+            if (num1 % 2 == 0){
+                resultado += num1;
+            }
+            num += 1;
+        }
+
+        alert(resultado);
+    </script>
 
 </body>
 </html>
