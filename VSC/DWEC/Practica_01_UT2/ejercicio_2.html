@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Introduce un numero de 3 digitos como máximo"))
+        if (numero > 999 || numero < 0){
+            alert("El numero no es valido")
+        }
+        else{
+            let centenas = int(numero / 100);
+            let decenas = int((numero - centenas * 100) / 10);
+            let unidades = int((numero - centenas * 100) - decenas * 10);
+            document.write("El numero contiene " + centenas + " centenas, " + decenas + " decenas, " + unidades + " unidades")
+        };
+    </script>
+</body>
+</html>

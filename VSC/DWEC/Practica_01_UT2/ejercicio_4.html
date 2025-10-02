@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+        let mes = prompt("Introduce el nombre de un mes:");
+        let dias;
+        let mesesMismosDias;
+
+        switch (mes) {
+            case "enero":
+            case "marzo":
+            case "mayo":
+            case "julio":
+            case "agosto":
+            case "octubre":
+            case "diciembre":
+                dias = 31;
+                mesesMismosDias = "enero, marzo, mayo, julio, agosto, octubre, diciembre";
+                break;
+            case "abril":
+            case "junio":
+            case "septiembre":
+            case "noviembre":
+                dias = 30;
+                mesesMismosDias = "abril, junio, septiembre, noviembre";
+                break;
+            case "febrero":
+                dias = 28; // No se considera año bisiesto para simplificar
+                mesesMismosDias = "febrero";
+                break;
+            default:
+                document.write("Por favor, introduce un nombre de mes válido.");
+                dias = null;
+        }
+
+        if (dias !== null) {
+            document.write("El mes de " + mes + " tiene " + dias + " días.<br>");
+            document.write("Los meses que tienen los mismos días son: " + mesesMismosDias + ".");
+        }
+    </script>
+    
+</body>
+</html>

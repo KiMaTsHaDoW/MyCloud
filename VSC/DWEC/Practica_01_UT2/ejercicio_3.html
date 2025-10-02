@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota_ex_1 = parsefloat(prompt("Introduce la nota del examen 1"))
+        let nota_ex_2 = parsefloat(prompt("Introduce la nota del examen 2"))
+        let nota_tr_1 = parsefloat(prompt("Introduce la nota del trabajo 1"))
+        let nota_tr_2 = parsefloat(prompt("Introduce la nota del trabajo 2"))
+        if (nota_ex_1 < 5 || nota_ex_2 < 5){
+            alert("No hace media las notas de los examenes ya que son menores que 5");
+        }
+        else if (nota_tr_1 < 4.5 || nota_tr_2 < 4.5){
+            alert("No hace media las notas de los trabajos ya que son menores que 4.5");
+        }
+        else{
+            let media_examenes = (nota_ex_1 + nota_ex_2) / 2;
+            let media_trabajos = (nota_tr_1 + nota_tr_2) / 2;
+            let media_final = (media_examenes * 0.75) + (media_trabajos * 0.25);
+            alert("La media final es " + media_final)
+        }
+    </script>
+
+</body>
+</html>
