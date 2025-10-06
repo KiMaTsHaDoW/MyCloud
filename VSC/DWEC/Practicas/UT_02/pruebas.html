@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Modulo Desarrollo Web en Entorno Cliente</h1>")
+    </script>
+
+    <p>Ejemplo de referencia a fichero javascript externo</p>
+    <script type="text/javascript" src="fichero_js.js"></script>
+
+    <p onclick="alert('Desarrollo Web en Entorno Cliente');">Parrafo con evento asociado</p>
+
+    <script>
+        console.log("antes del confirm") // Ctrl + shift + I para abrir la consola
+
+        let result = confirm("Acepta las cookiesç") // Aceptar las cookies
+
+        console.log("despues del confirm")
+
+        let result2 = prompt("Introduce tu nombre", "nombre") // Mandar alguna informacion
+        console.log(result2)
+        console.log(result)
+    </script>
+</body>
+</html>

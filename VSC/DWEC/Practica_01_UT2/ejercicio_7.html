@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var intentos = 5;
+        var usuario_1 = prompt("Escribe el nombre del usuario");;
+        var numero_adivinar;
+        var numero_intento = parseInt(prompt("Introduce un numero"));
+        var finalizado = false;
+
+        do{
+            numero_adivinar = parseInt(prompt("Introduce un numero para adivinar"));
+            intentos -= 1;
+            if (numero_intento > numero_adivinar){
+                alert("El numero es mayor");
+                alert("Te quedan " + intentos + " intentos");
+            }
+            else if (numero_intento < numero_adivinar){
+                alert("El numero es menor");
+                alert("Te quedan " + intentos + " intentos");
+            }
+            else{
+                alert("Has adivinado el numero");
+                finalizado = true;
+            }
+            if (intentos == 0 && finalizado != true){
+                alert("Has perdido");
+            }
+        }
+        while (intentos > 0 && !finalizado);
+
+
+    </script>
+</body>
+</html>

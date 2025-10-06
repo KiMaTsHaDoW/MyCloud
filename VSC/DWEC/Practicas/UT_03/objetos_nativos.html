@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Objeto nativo date
+        console.log(Date());
+        let fecha = new Date();
+        console.log(fecha);
+        // Dia del mes
+        console.log(fecha.getDate());
+        // Dia de la semana
+        console.log(fecha.getDay()); // El 0 es el domingo, 1 lunes, etc.
+        // Mes actual
+        console.log(fecha.getMonth()); // 0 es enero, 1 febrero, etc.
+        // Año actual
+        console.log(fecha.getFullYear());
+        // Mostrar fechas en formato texto
+        console.log(fecha.toString());
+        console.log(fecha.toDateString());
+        console.log(fecha.toLocaleString());
+        console.log(fecha.toLocaleDateString());
+        console.log(fecha.toTimeString());
+        console.log(fecha.toLocaleTimeString())
+
+        // Creacion de fechas con distinto formato
+        let cumple_1 = new Date(1978, 7, 23);
+        let cumple_2 = new Date("1978/8/23");
+        console.log(cumple_1);
+        console.log(cumple_2);
+
+        // Modificar fecha
+        cumple_1.setFullYear(2000);
+        console.log(cumple_1);
+    </script>
+</body>
+</html>

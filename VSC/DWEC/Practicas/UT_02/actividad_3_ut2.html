@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+    <!-- Ejercicio 1 -->
+
+        <!-- <label for="nombre">Nombre:</label><input type="text" id="nombre"><br/>
+        <label for="nota">Nota:</label><input type="number" min ="0" max="10" id="nota"><br>
+        <button onclick="mostrarAprobado()">Comprobar</button>
+        <p id="resultado"></p>
+        <script>
+            function mostrarAprobado(){
+                let nota = parseInt(document.getElementById("nota").value)
+                if (nota >= 5){
+                    document.getElementById("resultado").innerHTML = "Estas aprobadisimo M A K I N A"
+                    alert("Aprobao")
+                }
+                else {
+                    document.getElementById("resultado").innerHTML = "Estas suspendidisimo M A K I N A"
+                    alert("Suspendio")
+                }
+            }
+        </script>  -->
+
+    <!-- Ejercicio 2 -->
+
+    <!-- <label for="numero1">Numero 1:</label><input type="number" id="numero1"><br>
+    <label for="numero2">Numero 2:</label><input type="number" id="numero2"><br>
+    <label for="numero3">Numero 3:</label><input type="number" id="numero3"><br> 
+    <button onclick="comprobarMayor()">Cual es mayor</button>
+    <p id="resultado_2"></p>
+    <script>
+        function comprobarMayor(){
+            let numero_1 = document.getElementById("numero1").value;
+            let numero_2 = document.getElementById("numero2").value;
+            let numero_3 = document.getElementById("numero3").value;
+            let mayor = Math.max(numero_1, numero_2, numero_3)
+            document.getElementById("resultado_2").innerHTML = "El numero mayor es " + mayor;
+        }
+    </script> -->
+
+    <!-- Ejercicio 3 -->
+     
+    <p id="resultado_3"></p>
+
+    <script>
+        for (indice = 1; indice < 100; indice++){
+            if ((indice % 7 == 0) || (indice % 10 == 7)){
+                document.getElementById("resultado_3").innerHTML += "<h1>PUM</h1><br>";
+            }
+            else{
+                document.getElementById("resultado_3").innerHTML += indice + ", ";
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

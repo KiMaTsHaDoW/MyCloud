@@ -6,6 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p id="datos"></p>
+    <div id="impresion_tabla"></div>
+    <script>
+        const DAW = "Despliegue de Aplicaciones Web (DAW)"
+        const DIW = "Diseño de Interfaces Web (DIW)"
+        const DWEC = "Desarrollo Web en Entorno Cliente (DWEC)"
+        const DWES = "Desarrollo Web en Entorno Servidor (DWES)"
+        const PDAUF = "Programacion De Aplicaciones Utilizando Frameworks (PDAUF)"
+        const IPE = "Itinerario Para la Empleabilidad (IPE)"
+        const PIMD = "Proyecto Intermodular (PIMD)"
+
+        var nombre = "David";
+        var apellidos = "Gonzalez Menéndez";
+        var curso = "DAW";
+
+        document.getElementById("datos").innerHTML = "Nombre completo: " + nombre + " " + apellidos + "<br>";
+        document.getElementById("datos").innerHTML += "Curso: " + curso;
+
+        document.getElementById("impresion_tabla").innerHTML = 
+            `<table border = 1>
+                <tr>
+                    <td>${DAW}</td>
+                    <td>${DIW}</td>
+                    <td>${DWEC}</td>
+                    <td>${DWES}</td>
+                    <td>${IPE}</td>
+                    <td>${PDAUF}</td>
+                    <td>${PIMD}</td>
+                </tr>
+            </table>`;
+    </script>
 </body>
 </html>

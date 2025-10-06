@@ -7,16 +7,19 @@
 </head>
 <body>
     <script>
+        let centenas = 0;
+        let decenas = 0;
+        let unidades = 0;
         let numero = parseInt(prompt("Introduce un numero de 3 digitos como máximo"))
         if (numero > 999 || numero < 0){
             alert("El numero no es valido")
         }
         else{
-            let centenas = int(numero / 100);
-            let decenas = int((numero - centenas * 100) / 10);
-            let unidades = int((numero - centenas * 100) - decenas * 10);
-            document.write("El numero contiene " + centenas + " centenas, " + decenas + " decenas, " + unidades + " unidades")
+            centenas = parseInt(numero / 100);
+            decenas = parseInt((numero - centenas * 100) / 10);
+            unidades = parseInt((numero - centenas * 100) - decenas * 10);
         };
+        document.write("El numero contiene " + centenas + " centenas, " + decenas + " decenas, " + unidades + " unidades")
     </script>
 </body>
 </html>

@@ -1,1 +1,0 @@
-document.write("Modulo Desarrollo Web en Entorno Cliente")
