@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Actividad 1 -->
+
+     <!-- <script>
+        let cadena = prompt("Introduce una cadena");
+        document.write(cadena.toLowerCase() + "<br>");
+        document.write(cadena.toUpperCase() + "<br>");
+        alert("Longuitud: " + cadena.length);
+        let len_subcadena = parseInt(prompt("Introduce una longuitud para la subcadena (debe de ser menor a la cadena original)"));
+        document.write(cadena.substring(0, len_subcadena + 1) + "<br>");
+        document.write(cadena.split(" "));
+     </script> -->
+
+     <!-- Actividad 2 -->
+      
+     <!-- <script>
+        let resultado = '';
+        let indice = 0;
+        cadena = prompt("Introduce una cadena");
+        indice = cadena.length;
+        // for ((indice = cadena.length); indice >= 0; indice--){
+        //     resultado += cadena[indice];
+        //     resultado += "-";
+        // }
+        while (indice >= 0){
+            indice--;
+            resultado += cadena[indice];
+            resultado += "-";
+        }
+        document.write(resultado)
+     </script> -->
+
+     <!-- Actividad 3 -->
+
+     <!-- <script>
+        const VOCALES = ["a", "e", "i", "o", "u"];
+        let cadena = prompt("Introduce una cadena");
+        let num_vocales = 0;
+        for (indice=0; indice < cadena.length; indice++){
+            if (VOCALES.includes(cadena[indice].toLowerCase())){
+                num_vocales++;
+            }
+        }
+        document.write("El numero de vocales es " + num_vocales);
+     </script>  -->
+
+     <!-- Ejercicio 4 -->
+
+     <script>
+        // let cadena = prompt("Introduce una cadena que contenga parentesis");
+        // document.writeln(cadena.slice(cadena.indexOf("(")+1,cadena.indexOf(")")));
+     </script>
+
+     <!-- Ejercicio 5 -->
+
+     <script>
+        // let cadena = prompt("Introduce una cadena");
+        // document.write(cadena.slice(-cadena.length));
+
+        // Sin funciones no se
+
+     </script>
+
+     <!-- Ejercicio 6 -->
+
+     <script>
+//         let texto = prompt("Introduce una cadena de texto:");
+//         let invertido = "";
+
+//         for (let i = texto.length - 1; i >= 0; i--) {
+//             invertido = invertido + texto[i];
+//         }
+//         if (texto = invertido){
+//             document.write("Es polindroma");
+//         }
+//         else{
+//             document.write("No es palindromo")
+//         }
+     </script>
+
+    <!-- Ejercicio 7 -->
+
+    <script>
+        let suma = 0;
+        let cadena = prompt("Introduce una cadena con numeros");
+        function buscarDigitos(cadena){
+            for (indice=0; indice < cadena.length; indice++){
+            if (/\d/.test(cadena[indice])){
+                suma += parseInt(cadena[indice]);
+            }
+        }
+        return suma;
+        }
+        document.writeln(buscarDigitos(cadena))
+    </script>
+
+</body>
+</html>

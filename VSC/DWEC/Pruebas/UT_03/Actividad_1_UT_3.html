@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <!-- Ejercicio 1  -->
+    <script>
+
+        let edad = new Date()
+        let edad_calcular = new Date(2005, 8, 5)
+
+        let año_actual = edad.getFullYear()
+        let año_nac = edad_calcular.getFullYear()
+
+        alert("la edad es de " + (año_actual - año_nac))
+
+    </script>
+
+<!-- Ejercicio 2 -->
+
+    <script>
+
+        let cumpleaños = new Date(2005, 9, 9)
+        if (cumpleaños.getDate() == Date.getDate() && cumpleaños.getMonth() == Date.getMonth()){
+            alert("Es tu cumpleaños, felicidades")
+        }
+        else {
+            alert("No es tu cumpleaños")
+        }
+
+    </script>
+
+    <!-- Ejercicio 3 -->
+</body>
+</html>

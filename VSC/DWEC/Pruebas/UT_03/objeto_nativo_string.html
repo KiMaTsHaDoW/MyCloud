@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = "Oscar";
+        let apellido = "Ongil Villar";
+        let saludo = new String("Hola mundo");
+
+        let saludo2 = "Hola,mundo";
+
+        document.write(nombre + " " + apellido + "<br>"); 
+        document.write(nombre.length + "<br>");
+        document.write(nombre.charAt(3) + "<br>"); // Empieza desde 0 y busca la posicion en la cadena
+        document.write(nombre[3] + "<br>"); // Igual que el de arriba
+        document.write(nombre.toLocaleLowerCase() + "<br>");
+        document.write(nombre.toUpperCase() + "<br>"); 
+
+        document.write(saludo.indexOf("o") + "<br>"); // Busca en la posicion que esta empezando en 0
+        document.write(saludo.lastIndexOf("o") + "<br>"); // Empieza desde el final y empieza desde 0
+
+        document.write(saludo.startsWith("do") + "<br>"); //Si empieza con la cadena que le hemos puesto, devuelve true/false
+        document.write(saludo.endsWith("do") + "<br>");
+
+        document.write(saludo.replace("mundo", "a todos") + "<br>"); // Reemplaza la cadena 1 por la cadena 2
+        document.write(saludo.trim() + "<br>");
+
+        document.write(saludo.slice(2,5) + "<br>"); // Coge desde la posicion 2 incluyendolo hasta el 5 pero este sin incluir
+        document.write(saludo.slice(-5) + "<br>"); // Empieza desde el final y coge los cinco desde el final
+
+        document.write(saludo.substring(2,5) + "<br>"); // Hace lo mismo que el slice
+        
+        console.log(saludo2.split(",")); // Deberia separartelo en dos cadenas distintas en un array se muestra en la consola, con el doocument.write no se puede observar bien
+
+    </script>
+</body>
+</html>

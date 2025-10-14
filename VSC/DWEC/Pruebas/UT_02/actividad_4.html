@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Ejercicio 1 -->
+
+    <!-- <script>
+        var entero = 1357;
+        var decimal = 135.7;
+        var cientifico = 135e7;
+        var octal = 0o1357;
+        var hexadecimal = 0x1357;
+        alert("Numero entero: " + entero);
+        alert("Numero decimal: " + decimal);
+        alert("Numero cientifico: " + cientifico);
+        alert("Numero octal: " + octal);
+        alert("Numero hexadecimal: " + hexadecimal);
+    </script> -->
+    
+    <!-- Ekercicio 2 -->
+
+    <!-- <script>
+        var hora = 9;
+        var minutos = 0;
+        do {
+            document.write(hora + ":" + (minutos == 0 ? "00" : minutos) + "<br>");
+            minutos += 30;
+            if (minutos == 60){
+                hora++;
+                minutos = 0;
+            }
+        }
+        while (!(hora == 22 && minutos == 0));
+    </script> -->
+
+    <!-- Ejercicio 3 -->
+
+    <!-- <script>
+        var hora = 9;
+        var minutos = 0;
+        do {
+            document.write(hora + ":" + (minutos == 0 ? "00" : (minutos == 5 ? "05" : minutos)) + "<br>");
+            minutos += 5;
+            if (minutos == 60){
+                hora++;
+                minutos = 0;
+            }
+        }
+        while (!(hora == 22 && minutos == 0));
+    </script> -->
+
+    <!-- Ejercicio 4 -->
+
+    <!-- <script>
+        function determinarEdad(){
+            const ninio = "Niño";
+            const adolescente = "Adolescente";
+            const trabajador = "Trabajador";
+            const jubilado = "Jubilado";
+            var nombre = prompt("Introduce tu nombre");
+            var edad = parseInt(prompt("Introduce la edad"));
+            if (edad < 12){
+                console.log(nombre + " tiene " + edad + " años y por tanto es " + ninio);
+            }
+            else if (13 <= edad <= 17){
+                console.log(nombre + " tiene " + edad + " años y por tanto es " + adolescente);
+            }
+            else if (18 <= edad <= 64){
+                console.log(nombre + " tiene " + edad + " años y por tanto es " + trabajador);
+            }
+            else if (edad => 65){
+                console.log(nombre + " tiene " + edad + " años y por tanto es " + jubilado);
+            }
+            else{
+                alert("valor no valido");
+            }
+        }
+    </script>
+    <button onclick="determinarEdad()">Boton sorpresa :))</button> -->
+
+    <!-- Ejercicio 5 -->
+
+    <!-- <script>
+        const factor_min = parseInt(60);
+        const factor_h = parseInt(3600);
+        const factor_d = parseInt(86400);
+        var dias = parseInt(prompt("Introduce los dias (Numeros enteros)"));
+        var horas = parseInt(prompt("Introduce las horas (Numeros enteros)"));
+        var minutos = parseInt(prompt("Introduce los minutos (Numeros enteros)"));
+
+        var segundos = BigInt(minutos * factor_min + horas * factor_h + dias * factor_d)
+        alert("Los segundos de la cantidad de tiempo son: " + segundos)
+    </script> -->
+
+    <!-- Ejercicio 6 -->
+
+    <script>
+        const letras = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D",
+                        "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]
+        let resto;
+        let num_dni = prompt("Introduce los 8 digitos del dni");
+        if (0 < num_dni < 99999999){
+            resto = parseInt(num_dni) % 23;
+        }
+        document.write("La letra del DNI " + num_dni + " es " + letras[resto]);
+        
+    </script>
+
+    <!-- Ejercicio 7 -->
+
+    
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+div{
+    display: inline-block;
+    margin: 10px;
+}
+
+
+.figura_1{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border: 10px solid green;
+}
+.figura_2{
+    width: 100px;
+    height: 100px;
+    background-color: lime;
+    border: 10px dotted purple;
+    border-radius: 20px;
+}
+.figura_3{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-top: 10px solid darkcyan;
+    border-left: 10px solid darkcyan;
+    border-bottom: 10px solid darkblue;
+    border-right: 10px solid darkblue;
+    border-radius: 100px;
+}
+.figura_4{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: 10px groove darkolivegreen;
+    border-left: 10px ridge darkolivegreen;
+    border-bottom: 10px groove darkolivegreen;
+    border-right: 10px ridge darkolivegreen;
+}
+.figura_5{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 10px double magenta;
+}
+.figura_6{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+
+    border: 10px dashed red;
+    
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+.figura_7{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+
+    border: 10px inset yellow;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+}

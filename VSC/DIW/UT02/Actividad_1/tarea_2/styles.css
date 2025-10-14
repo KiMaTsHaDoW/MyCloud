@@ -1,0 +1,26 @@
+div {
+    height: 25px;
+    width: 100px;
+    border: 1px;
+    color: white;
+    border-color: white;
+    padding: 5px;
+    display:inline-block;
+    margin: 2px;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.negro {
+    background-color: black;
+}
