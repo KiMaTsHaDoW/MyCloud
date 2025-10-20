@@ -17,7 +17,7 @@
             document.writeln("Numero elevado: " + Math.pow(numero, numero_elevar));
             break;
         case 2:
-            document.writeln("Raiz cuadrada: " + Math.sqrt(numero));
+            document.writeln("Raiz cuadrada: " + Math.abs(Math.sqrt(numero)));
             break;
         case 3:
 
@@ -47,14 +47,15 @@
 
     <!-- Ejercicio 3 -->
 
-    <script>
+    <!-- <script>
         let numero_operar = parseInt(prompt("introduce un numero"));
+        numero_operar = Math.abs(numero_operar);
         document.writeln("Valor exponencial: " + numero_operar.toExponential() + "<br>");
         document.writeln("Numero con 4 decimales: " + numero_operar.toFixed(4) + "<br>");
         document.writeln("Numero con binario: " + numero_operar.toString(2) + "<br>");
         document.writeln("Numero con octal: " + numero_operar.toString(8) + "<br>");
         document.writeln("Numero con hexadecimal: " + numero_operar.toString(16) + "<br>");
-    </script>
+    </script> -->
 
 </body>
 </html>

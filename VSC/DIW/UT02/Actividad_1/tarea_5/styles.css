@@ -1,25 +1,21 @@
 div{
     display: inline-block;
     margin: 10px;
+    width: 100px;
+    height: 100px;
 }
 
 
 .figura_1{
-    width: 100px;
-    height: 100px;
     background-color: purple;
     border: 10px solid green;
 }
 .figura_2{
-    width: 100px;
-    height: 100px;
     background-color: lime;
     border: 10px dotted purple;
     border-radius: 20px;
 }
 .figura_3{
-    width: 100px;
-    height: 100px;
     background-color: orange;
     border-top: 10px solid darkcyan;
     border-left: 10px solid darkcyan;
@@ -28,20 +24,16 @@ div{
     border-radius: 100px;
 }
 .figura_4{
-    width: 100px;
-    height: 100px;
     background-color: red;
 
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    border-top: 10px groove darkolivegreen;
-    border-left: 10px ridge darkolivegreen;
-    border-bottom: 10px groove darkolivegreen;
-    border-right: 10px ridge darkolivegreen;
+    border-top: 10px groove darkgreen;
+    border-left: 10px ridge darkgreen;
+    border-bottom: 10px groove darkgreen;
+    border-right: 10px ridge darkgreen;
 }
 .figura_5{
-    width: 100px;
-    height: 100px;
     background-color: purple;
 
     border-top-left-radius: 100px;
@@ -50,8 +42,6 @@ div{
     border: 10px double magenta;
 }
 .figura_6{
-    width: 100px;
-    height: 100px;
     background-color: greenyellow;
 
     border: 10px dashed red;
@@ -60,11 +50,67 @@ div{
     border-bottom-left-radius: 200px;
 }
 .figura_7{
-    width: 100px;
-    height: 100px;
     background-color: gray;
 
     border: 10px inset yellow;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
+}
+.figura_8{
+    background-color: pink;
+
+    border: 5px solid greenyellow;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transform: rotate(45deg);
+}
+.figura_9{
+    background-color: coral;
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 10px double purple;
+}
+.figura_10{
+    background-color: greenyellow;
+
+    border-top: 10px solid blue;
+    border-left: 10px solid blue;
+    border-bottom: 10px solid darkblue;
+    border-right: 10px solid darkblue;
+    
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+.fa_1{
+    width: 0;
+    height: 100px;
+
+    border-bottom: 15px solid transparent;
+    border-right: 50px solid blue;
+    border-left: 50px solid red;
+}
+.fa_2{
+    width: 0;
+    height: 0;
+
+    border-radius: 100%;
+    border-color:transparent ;
+    border-width: 50px;;
+    border-style: solid;
+
+    border-top-color: 130px blue;    
+}
+.fa_3{
+    width: 0;
+    height: 0;
+
+    border-radius: 50px;
+    border-color:red ;
+    border-width: 50px;
+    border-style: solid;
+
+    border-right-color: transparent;
 }

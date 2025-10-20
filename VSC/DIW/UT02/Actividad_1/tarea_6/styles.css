@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    gap: 15px;
+    /* espacio entre figuras */
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: #fff;
+}
+
+.figura {
+    width: 50px;
+    height: 50px;
+}
+
+.rojo {
+    background: #c84d4d;
+}
+
+.gris {
+    background: #4a4a4a;
+}
+
+.rectangulo {
+    width: 80px;
+}
+
+.rectangulo-alto {
+    height: 80px;
+}
+
+.trapecio {
+    width: 80px;
+    height: 0;
+    border-bottom: 50px solid #4a4a4a;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    background: none;
+}
+
+.trapecio-invertido {
+    width: 80px;
+    height: 0;
+    border-top: 50px solid #c84d4d;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    background: none;
+}
+
+.circulo {
+    border-radius: 50%;
+}
+
+.ovalo {
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.triangulo-arriba {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #4a4a4a;
+    background: none;
+}
+
+.triangulo-derecha {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right    : 50px solid #c84d4d;
+    background: none;
+}
