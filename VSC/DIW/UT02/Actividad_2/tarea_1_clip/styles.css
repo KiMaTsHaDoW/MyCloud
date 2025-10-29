@@ -1,0 +1,21 @@
+.caja_1{
+    background-color: red;
+    border: 10px dotted black;
+    padding: 10px;
+
+    background-clip: border-box;
+}
+.caja_2{
+    background-color: greenyellow;
+    border: 10px dotted black;
+    padding: 10px;
+
+    background-clip: padding-box;
+}
+.caja_3{
+    background-color: blueviolet;
+    border: 10px dotted black;
+    padding: 10px;
+
+    background-clip: content-box;
+}   

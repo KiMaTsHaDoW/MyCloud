@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "idParrafo">hola como estamos</p>
+
+    <script>
+        function cambiarColor(){
+            document.getElementById("idParrafo").style.color = "Red";
+        }
+
+        setTimeout(cambiarColor, 3000);
+
+        // function mostrarMensaje(){
+        //     document.write("Mensaje cada 2 segundos<br>")
+        // }
+
+        // setInterval(mostrarMensaje, 2000);
+
+        let contador = 0;
+        let idIntervalo = setInterval(mostrarMensaje2, 1000);
+        function mostrarMensaje2(){
+            document.write("Mensaje cada segundo<br>");
+            contador++;
+            if (contador >= 5){
+                clearInterval(idIntervalo);
+            }
+        }
+
+    </script>
+</body>
+</html>

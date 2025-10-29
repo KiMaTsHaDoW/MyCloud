@@ -1,0 +1,42 @@
+div {
+    display: inline-block;
+}
+
+
+#div_1 img{
+    width: 100px;
+    height: 100px;
+
+    border: 5px solid black;
+    object-fit: fill;
+}
+#div_2 img{
+    width: 100px;
+    height: 100px;
+
+    border: 5px solid black;
+    object-fit: contain;
+}
+#div_3 img{
+    width: 100px;
+    height: 100px;
+
+    border: 5px solid black;
+    object-fit: cover;
+}
+#div_4 img{
+    width: 100px;
+    height: 100px;
+
+
+    border: 5px solid black;
+    object-fit: none;
+}
+#div_5 img{
+    width: 100px;
+    height: 100px;
+    
+
+    border: 5px solid black;
+    object-fit: scale-down;
+}

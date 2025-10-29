@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>DOM</h2>
+    <p id="idParrafo">Parrafo Principal</p>
+    <p class="parrafo">Primer parrafo</p>
+    <p class="parrafo">Segundo parrafo</p>
+    <p class="parrafo">Tercer parrafo</p>
+    <div class = "contenedor">
+        <p>Parrafo dentro de un div</p>
+        <p>Parrafo dentro de un div</p>
+    </div>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+
+    <script>
+        const parrafo = document.getElementById("idParrafo");
+        parrafo.style.color = "teal";
+        parrafo.style.backgroundColor = "pink";
+
+        const parrafos = document.getElementsByClassName("parrafo");
+        for (parrafo1 of parrafos){
+            parrafo1.style.color = "blue";
+        }
+
+        const parrafoDentro = document.querySelector(".contenedor p");
+        parrafoDentro.style.color = "Orange";
+
+        // const parrafosDentro = document.querySelectorAll(".contenedor p");
+        // for (parrafo1 of parrafosDentro){
+        //     parrafo1.style.color = "orange";
+        // }
+
+        const nuevoTexto = document.createTextNode("Texto creado mediante TextNode");
+        let divContenedor = document.getElementById("div1");
+        divContenedor.appendChild(nuevoTexto);
+
+        let div2 = document.getElementById("div2");
+        div2.innerHTML = "<h2> Titulo2 </h2> <p>hola</p> <br> asdf";
+
+        let div3 = document.getElementById("div3");
+        div3.textContent = "<h2> Titulo2 </h2> <p>hola</p> <br> asdf";
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 7</title>
+</head>
+<body>
+    <!-- Actividad 1 -->
+
+    <!-- <p id="resoltado">
+
+    </p>
+
+    <script>
+        let array = ["palabra", "cosa", "prueba", "dormido"];
+        document.getElementById("resoltado").innerHTML += "<ol>" + "\n";
+            for (let indice = 0; indice < array.length; indice++) {
+                const element = array[indice];
+                document.getElementById("resoltado").innerHTML += "<li>" + element + "</li>" + "\n";        
+            }
+
+        document.getElementById("resoltado").innerHTML += "</ol>" + "\n";
+    </script> -->
+
+    <!-- Actividad 2 -->
+
+    <!-- <p><button onclick="aniadirImagen()">Añadir imagen</button></p>
+    <div id = "image-container">
+
+    </div>
+    
+    <script>
+        let div = document.getElementById("image-container");
+        function aniadirImagen(){
+            let img = document.createElement("img");
+            img.src = "https://picsum.photos/id/1025/600/400"
+            div.appendChild(img)
+        }
+    </script> -->
+
+    <!-- Actividad 5 -->
+
+    <!-- <div>
+        <ol id="list">
+        </ol>
+    </div>
+     
+    <button onclick="crearTarea()">Añadir Tarea</button>
+    <script>
+        function crearTarea(){
+            let list = document.getElementById("list");
+
+            let ele = document.createElement('li');
+            let btn = document.createElement('button');
+            let tarea = prompt("introduce la tarea") + ' ';
+
+            btn.textContent = 'Eliminar';
+            btn.onclick = () => {
+                list.removeChild(ele);
+            }
+            ele.textContent = tarea;
+            ele.appendChild(btn);
+            
+            list.appendChild(ele);
+
+        }
+
+    </script> -->
+
+    <!-- Ejercicio 6 -->
+
+    <label>Columnas: <input type="number" id="cols"></label>
+    <label>Filas: <input type="number" id="rows"></label>
+    <button onclick="crearTabla()">Crear tabla</button>
+
+    <div id="main_frame">
+
+    </div>
+
+    <script>
+        function crearTabla(){
+            let div = document.getElementById('main_frame');
+            let cols = document.getElementById('cols').value;
+            let rows = document.getElementById('rows').value;
+            let table = document.createElement('table');
+
+            for (let index = 0; index < cols; index++) {
+                let fila = document.createElement('tr');
+                table.appendChild(fila);
+                for (let index = 0; index < rows; index++) {
+                    let columna = document.createElement('td')
+                    columna.textContent = 'a';
+                    table.appendChild(columna);
+                }
+                
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ventana principal</h2>
+    <button onclick="abrirVentana()">Abre una ventana</button>
+    <button onclick="cerrarVentana()">Cerrar la ventana</button>
+
+    <script>
+        let nueva_ventana;
+        function abrirVentana(){
+            nueva_ventana = window.open("LittleWindow.html", "MyLittleWindow", "width=500px, height=500px");
+        }
+        function cerrarVentana(){
+            nueva_ventana = window.close();
+        }
+        window.mivar = "Valor compartido por variables globales: H O L A";
+
+        localStorage.setItem("nombre", "valor compartido por localstorage:D");
+
+        sessionStorage.setItem("nombre", "valor compartido por localstorage:D");
+    </script>
+    
+</body>
+</html>

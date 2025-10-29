@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Actividad 1 -->
+
+    <!-- <script>
+        function cambiarColor(){
+            let color_input = document.getElementById("color").value;
+            document.getElementById("resultado").style.color = color_input;
+        }
+    </script>
+    <p>Escoge el color para el texto</p>
+    <p><input id="color" type="color" onchange="cambiarColor()"></p>
+    <button onclick="cambiarColor()">Enviar</button>
+    <p id="resultado">Aqui se muestra el resultado</p>
+
+    -->
+
+    <!-- Actividad 2 -->
+
+    <!-- <script>
+        let color = '';
+
+        function CambiarParametros(){
+            let colores = document.getElementsByName("color");
+            for (let element of colores){
+                if (element.checked){
+                    document.getElementById("color").innerHTML += element.value;
+                }
+            }
+            let animales = document.getElementsByName("animal");
+            for (let element of animales){
+                if (element.checked){
+                    document.getElementById("animal").innerHTML += element.value;
+                }
+            }
+        }
+    </script>
+
+    <fieldset>
+        <legend>Datos personles</legend>
+        <p>¿Cual es tu color favorito?</p>
+        <p><label><input type="radio" name="color" value="rojo">Rojo</label></p>
+        <p><label><input type="radio" name="color" value="azul">Azul</label></p>
+        <p><label><input type="radio" name="color" value="verde">Verde</label></p>
+
+        <p>¿Cual es tu animal favorito?</p>
+        <p><label><input type="radio" name="animal" value="perro">Perro</label></p>
+        <p><label><input type="radio" name="animal" value="gato">gato</label></p>
+        <p><label><input type="radio" name="animal" value="pez">Pez</label></p>
+        
+        <button onclick="CambiarParametros()">Enviar</button>
+    </fieldset>
+
+    <p id="animal">Tu animal favorito es: </p> -->
+    <p id="color">Tu color favorito es: </p>
+
+    <!-- Actividad 3 -->
+
+    <!-- <div id="caja"></div>
+
+    <script>
+    const caja = document.getElementById("caja");
+    caja.style.width = "100px";
+    caja.style.height = "100px";
+    caja.style.backgroundColor = "blue";
+    caja.style.position = "absolute";
+    caja.style.left = "0px";
+    caja.style.top = "100px";
+
+    let posicion = 0;
+
+    function moverCaja() {
+        posicion += 2;
+        caja.style.left = posicion + "px";
+
+        if (posicion >= window.innerWidth - parseInt(caja.style.width)) {
+        clearInterval(animacion);
+        }
+    }
+    const animacion = setInterval(moverCaja, 10);
+    </script> -->
+
+</body>
+</html>

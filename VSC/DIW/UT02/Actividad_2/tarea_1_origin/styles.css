@@ -1,0 +1,32 @@
+div{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 15px;
+}
+
+
+.caja_1{
+    border: 10px dotted black;
+    padding: 30px;
+    background-image: url("https://picsum.photos/id/1067/100/100");
+    background-repeat: no-repeat;
+
+    background-origin: border-box;
+}
+.caja_2{
+    border: 10px dotted black;
+    padding: 30px;
+    background-image: url("https://picsum.photos/id/1067/100/100");
+    background-repeat: no-repeat;
+
+    background-origin: padding-box;
+}
+.caja_3{
+    border: 10px dotted black;
+    padding: 30px;
+    background-image: url("https://picsum.photos/id/1067/100/100");
+    background-repeat: no-repeat;
+
+    background-origin: content-box;
+}   

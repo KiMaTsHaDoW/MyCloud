@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tarjeta{
+            width: 250px;
+            height: 250px;
+            margin: 5px;
+            padding: 5px;
+            border: 3px solid transparent;
+            display: inline-block;
+            box-shadow: 2px 2px 10px black;
+
+            border-radius: 5%;
+            color:grey;
+        }
+        .boton{
+            padding: 10px;
+
+            background-color: blue;
+            color: aliceblue;
+            border-radius: 20%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function AgregarElemento(){
+            let texto = document.getElementById("element-text").value;
+            let container = document.getElementById("element-container");
+            let element = document.createElement("p");
+            element.textContent = texto;
+
+            container.appendChild(element);
+        }
+
+        function crearTarjeta(){
+            let cabecera = "";
+            let texto = "";
+
+            cabecera = document.createElement('h3');
+            cabecera.textContent = document.getElementById("titulo_tarjeta").value;
+
+            texto = document.createElement('p');
+            texto.textContent = document.getElementById("desc_tarjeta").value;
+
+            let elemento_nuevo = document.createElement('div')
+            let boton = document.createElement("button");
+            let imagen = document.createElement("img");
+            let contenedor_tarjetas = document.getElementById('contenedor-tarjeta');
+
+            boton.textContent = "Eliminar"
+            boton.onclick = function(){
+                contenedor_tarjetas.removeChild(elemento_nuevo);
+            }
+            boton.classList.add("boton");
+
+            imagen.src = document.getElementById("url").value;
+            imagen.width = "200";
+            imagen.height = "100";
+
+            elemento_nuevo.appendChild(imagen);
+            elemento_nuevo.appendChild(cabecera);
+            elemento_nuevo.appendChild(texto);
+
+            elemento_nuevo.classList.add('tarjeta');
+            elemento_nuevo.appendChild(boton);
+
+            contenedor_tarjetas.appendChild(elemento_nuevo);
+        }
+    </script>
+
+    <fieldset>
+        <input type="text" id="titulo_tarjeta" placeholder="Titulo de la tarjeta"><br>
+        <input type="text" id="desc_tarjeta" placeholder="Descripcion de la tarjeta"><br>
+        <input type="text" id="url" placeholder="URL de la imagen"><br>
+        <button onclick="crearTarjeta()">Crear Tarjeta</button>
+    </fieldset><br>
+
+    <input type="text" id="element-text" placeholder="Escribe un texto">
+    <button id="add-element-text" onclick="AgregarElemento()">Agregar elemento</button>
+
+    <div id="element-container">
+
+    </div>
+
+    <div id="contenedor-tarjeta">
+
+    </div>
+</body>
+</html>

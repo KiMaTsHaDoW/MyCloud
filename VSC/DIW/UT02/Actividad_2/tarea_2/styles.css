@@ -1,0 +1,9 @@
+div{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 15px;
+    background-repeat: no-repeat;
+
+    background-image: url("https://picsum.photos/id/1020/100/100"), url("https://picsum.photos/id/1068/250/250");
+}
