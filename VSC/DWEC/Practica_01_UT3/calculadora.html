@@ -1,10 +1,12 @@
-    <!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Calculadora Física</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="calculadora">
     <div id="pantalla" class="pantalla">0</div>
@@ -28,34 +30,25 @@
       <button onclick="agregar('.')">.</button>
       <button class="operador" onclick="agregar('+')">+</button>
 
-      <button onclick="borrar()">C</button>
+      <button class="funcion" onclick="agregar('Math.sin(')">sen</button>
+      <button class="funcion" onclick="agregar('Math.cos(')">cos</button> 
+      <button class="funcion" onclick="agregar('Math.tan(')">tan</button>
+      <button onclick="agregar(')')">)</button>
+
+      <button class="funcion" onclick="agregar('Math.log10(')">log</button>
+      <button class="funcion" onclick="agregar('Math.log(')">ln</button>
+      <button class="funcion" onclick="agregar('Math.sqrt(')">√</button>
+      <button class="funcion" onclick="agregar('Math.exp(')">exp</button>
+
+      <!-- En todas las funciones avanzadas de la libreria Math, se agregan sin cerrar el parentesis
+     para que el usuario pueda introducir valores dentro de la funcion -->
+
+      <button class="borrar" onclick="borrar()">C</button>
       <button class="igual" onclick="calcular()">=</button>
+      <button class="funcion" onclick="agregar('**')">x^y</button>
     </div>
   </div>
-
-  <script>
-    let pantalla = document.getElementById('pantalla');
-    let expresion = '';
-
-    function agregar(valor) {
-      expresion += valor;
-      pantalla.textContent = expresion;
-    }
-
-    function borrar() {
-      expresion = '';
-      pantalla.textContent = '0';
-    }
-
-    function calcular() {
-      try {
-        expresion = eval(expresion).toString();
-        pantalla.textContent = expresion;
-      } catch {
-        pantalla.textContent = 'Error';
-        expresion = '';
-      }
-    }
-  </script>
+  <script src="functions.js"></script>
 </body>
 </html>
+

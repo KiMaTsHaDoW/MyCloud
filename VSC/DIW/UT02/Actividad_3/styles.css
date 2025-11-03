@@ -1,0 +1,36 @@
+body {
+    background-color: #333;
+    color: #FFF;
+    font-family: Georgia, Cambria, serif;
+    font-size: 16px;
+}
+
+h1 {
+    color: #A0A;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 32px;
+}
+
+h2 {
+    color: #FFE;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 24px;
+}
+
+h2 + ul li {
+    color: #99C;
+}
+
+p strong.internet,
+p strong.web {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p em.html-css {
+    color: #FFF;
+    background-color: #99C;
+    font-style: italic;
+    padding: 2px 4px;
+    border-radius: 3px;
+}

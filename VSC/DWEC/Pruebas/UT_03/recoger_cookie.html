@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="recogerCookie()">Recoger cookie</button>
+    <script>
+        function recogerCookie(){
+            const cookie = document.cookie;
+            const arrayCookie = cookie.split(";");
+            for (const cookie of arrayCookie){
+                const [nombre, valor] = cookie.split("=");
+                if (nombre === "mensaje"){
+                    console.log("Valor de la cookie 'usuario' = " + valor);
+                }
+                else{
+                    console.log("Cookie sin valor")
+                }
+            }
+        }
+    </script>
+</body>
+</html>

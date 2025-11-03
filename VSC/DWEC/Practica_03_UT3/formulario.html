@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p><label>Nombre:<input type="text" placeholder="Nombre de usuario" id="user" class="campo"></label></p>
+    <p><label>Edad:<input type="text" placeholder="Edad" id="age" class="campo"></label></p>
+    <p><label>Nacionalidad:<input type="text" placeholder="Nacionalidad" id="nacionalidad" class="campo"></label></p>
+    <p><label>Teléfono:<input type="text" placeholder="Telefono" id="tfno" class="campo"></label></p>
+    <p><label>Nacionalidad:<input type="text" placeholder="Correo electronico" id="email" class="campo"></label></p>
+
+    <button onclick="guardarDatos()" class="guardar">Guardar Datos</button>
+
+    <button onclick="eliminarDatos()" class="eliminar">Eliminar Datos</button>
+
+    <fieldset>
+        <legend>Selecciona un dato a eliminar</legend>
+        <select id="campo_unico" class="campo">
+            <option class="campo">Selecciona</option>
+            <option class="campo">Edad</option>
+            <option class="campo">Nacionalidad</option>
+            <option class="campo">Teléfono</option>
+            <option class="campo">Correo</option>
+        </select>
+        <button onclick="eliminarUnico()" class="eliminar">Eliminar</button>
+    </fieldset>
+
+    <h2 id="resultado"></h2>
+
+    <script>
+        function guardarDatos(){
+            let usuario = document.getElementById("user").value;
+
+            document.cookie = "usuario="+ usuario +"; expires=01 Jan 2099";
+
+            localStorage.setItem("Edad", document.getElementById("age").value)
+            localStorage.setItem("Nacionalidad", document.getElementById("nacionalidad").value)
+            localStorage.setItem("Teléfono", document.getElementById("tfno").value)
+            localStorage.setItem("Correo electronico", document.getElementById("email").value)
+
+            document.getElementById("resultado").textContent = "Informacion guardada correctamente";
+        }
+
+        function eliminarDatos(){
+            document.cookie = "usuario=" + "; expires=01 Jan 1999";
+            localStorage.clear();
+
+            document.getElementById("resultado").textContent = "Informacion eliminada correctamente";
+        }
+
+        function eliminarUnico(){
+            let dato = document.getElementById("campo_unico").value;
+            if (dato != "Selecciona")
+                localStorage.removeItem(dato);
+                document.getElementById("resultado").textContent = "Dato eliminado correctamente";  
+        }
+    </script>
+</body>
+</html>
