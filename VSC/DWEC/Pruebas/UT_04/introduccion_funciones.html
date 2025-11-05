@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Funciones</h2>
+    <script>
+    //     //Paso por valor
+    //     function duplicar(x) {
+    //         x = x * 2;
+    //         console.log("Dentro de la funcion " + x); //10
+
+    //     }
+
+    //     let numero = 5;
+    //     duplicar(numero);
+    //     console.log("Fuera de la funcion " + numero);//5
+
+    //     function agregarElemento(arr, elemento) {
+    //         arr.push(elemento);
+    //         console.log("Dentro de la funcion " + arr); // 1,2,3,4
+
+    //     }
+    //     //Paso por referencia(arrays y objetos)
+    //     let miArray = [1, 2, 3];
+    //     agregarElemento(miArray, 4);
+    //     console.log("Fuera de la funcion " + miArray); // 1,2,3,4
+
+    //     //Operador rest(...)
+    //     function suma(...numeros) {
+    //         let resultado = 0;
+    //         for (const num of numeros) {
+    //             resultado += num;
+    //         }
+    //         return resultado;
+
+    //     }
+    //     console.log("Suma de 5 numeros " + suma(1, 2, 3, 4, 5));
+    //     console.log("Suma de 3 numeros " + suma(1, 2, 3));
+
+    //     //Arguments
+    //     function suma2() {
+    //         let resultado = 0;
+    //         for (let i = 0; i < arguments.length; i++) {
+    //             resultado += arguments[i];
+    //         }
+    //         return resultado;
+    //     }
+    //     console.log("Suma de 5 numeros con arguments " + suma2(1, 2, 3, 4, 5));
+    //     console.log("Suma de 3 numeros con arguments " + suma2(1, 2, 3));
+
+    //    //funciones flecha
+    //    const saludar = () => console.log("hola");
+    //    saludar();
+        
+    //    const saludar2 = nombre => console.log("hola "+ nombre);
+    //    saludar2("Pedro");
+
+    //    function saludar3(){
+    //     console.log("hola");
+    //    } 
+    //    saludar3();
+
+        // // funcion por expresion (funcion anonima)
+        // const sumar = function(a, b){
+        //     return a + b;
+        // }
+        // alert(sumar(2, 4));
+
+        //funcion por expresion mediante flechas (funcion anonima)
+        // const resta = (a, b) => a - b;
+        // alert(resta(32, 10));
+
+        //funcion anonima en settimeout (con y sin flecha)
+        setTimeout(function (){ alert('Hola como estan los makinas'); }, 2000)
+        setTimeout(() => { alert('Hola como estan los makinas'); }, 5000)
+
+    </script>
+</body>
+
+</html>
