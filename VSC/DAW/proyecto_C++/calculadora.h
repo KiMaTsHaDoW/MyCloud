@@ -20,5 +20,10 @@ int multiplicar(int a, int b);
 * @brief Divide dos números enteros.
 * @return Devuelve 0 si el divisor es 0.
 */
+int potencia(int a, int b) {(return a**b)};
+/**
+* @brief Realiza la exponenciacion de b sobre a.
+* @return Devuelve el valor de la operacion.
+*/
 int dividir(int a, int b);
 #endif
